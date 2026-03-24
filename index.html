@@ -24,33 +24,39 @@
             text-align: center; 
         }
         
-        .brand-logo-link {
-            display: block;
-            text-decoration: none;
-            margin: 20px auto 25px;
-        }
-
+        /* الشعار دائري كما طلبت */
         .brand-logo-img { 
-            width: 260px; /* حجم الشعار الجديد */
-            height: auto; 
+            width: 120px; 
+            height: 120px; 
+            border-radius: 50%; /* تنسيق دائري */
+            object-fit: cover; 
+            margin: 20px auto 20px; 
             display: block;
-            margin: 0 auto;
-            filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.4)); 
+            border: 2px solid #ff0000; 
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.7); 
+            background-color: #fff;
         }
 
-        .subtitle { color: #cccccc; font-size: 14px; margin-bottom: 20px; }
+        h1 { font-size: 1.8rem; letter-spacing: 1px; font-weight: 900; margin: 10px 0; }
+        p { color: #cccccc; font-size: 14px; margin-bottom: 5px; padding: 0 15px; }
 
         .whatsapp-card {
             display: inline-block;
             margin: 10px auto 15px;
             text-decoration: none;
             background: #0d1017;
-            padding: 12px 28px; 
-            border-radius: 50px;
+            padding: 10px 25px; 
+            border-radius: 12px;
             color: #ffffff;
             font-weight: bold;
+            font-size: 16px;
             box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); 
             transition: 0.3s ease;
+        }
+
+        .whatsapp-card:active {
+            transform: scale(0.95);
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
         }
 
         .social-icons-container {
@@ -60,23 +66,36 @@
             margin: 15px auto 25px;
         }
 
+        /* التطبيقات مربعة كما طلبت */
         .social-icon-only {
             display: inline-flex;
-            width: 50px; height: 50px;
-            background: #0d1017;
-            border-radius: 12px; 
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+            width: 50px; 
+            height: 50px;
+            background: #0d1017;
+            border-radius: 12px; /* تنسيق مربع بزويا منحنية */
+            transition: 0.3s ease;
+            text-decoration: none;
             box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); 
         }
         
-        .social-icon-only img { width: 28px; height: 28px; object-fit: contain; }
+        .social-icon-only img {
+            width: 28px; 
+            height: 28px;
+            object-fit: contain;
+        }
 
+        .social-icon-only:active {
+            transform: scale(0.95); 
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+        }
+        
         .section-title { 
             text-align: right; 
             font-weight: bold; 
             font-size: 1.2rem; 
-            margin: 35px 10px 15px; 
+            margin: 30px 10px 15px; 
             color: #fff; 
             border-right: 5px solid #ff0000; 
             padding-right: 12px; 
@@ -84,10 +103,10 @@
 
         .branch-card { 
             display: block; 
-            margin: 0 10px 12px; 
+            margin: 0 10px 15px; 
             text-decoration: none; 
             border-radius: 12px; 
-            box-shadow: 0 0 12px rgba(255, 0, 0, 0.2); 
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); 
             transition: 0.3s ease; 
         }
 
@@ -99,42 +118,76 @@
             font-size: 16px; 
             color: #ffffff; 
             border-right: 3px solid #ff0000;
+            line-height: 1.4;
         }
 
-        .branch-card:active { transform: scale(0.97); }
+        .wholesale-card .card-content { 
+            background: #1f0808; 
+            font-weight: bold; 
+            border-right-color: #ffffff; 
+        }
+
+        .branch-card:active { 
+            transform: scale(0.97); 
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.7); 
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <a href="https://freeimage.host/i/q6eC0XV" class="brand-logo-link">
-        <img src="https://iili.io/q6eC0XV.md.jpg" alt="LAZAROS Logo" class="brand-logo-img" border="0">
-    </a>
+    <img src="https://iili.io/q6eC0XV.md.jpg" alt="LAZAROS Logo" class="brand-logo-img">
     
-    <div class="subtitle">فروعنا في العراق</div>
+    <h1>LAZAROS</h1>
+    <p>فروعنا في العراق</p>
     
     <a href="https://wa.me/9647825558001" class="whatsapp-card">
         💬 تواصل معنا: 07825558001
     </a>
 
     <div class="social-icons-container">
-        <a href="https://www.tiktok.com/@lazaros.4jew" class="social-icon-only">
-            <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png">
+        <a href="https://www.instagram.com/lazaros4jew/" class="social-icon-only">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
         </a>
         <a href="https://www.facebook.com/share/1B4nEKEUXV/" class="social-icon-only">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
         </a>
-        <a href="https://www.instagram.com/lazaros4jew/" class="social-icon-only">
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png">
+        <a href="https://www.tiktok.com/@lazaros.4jew" class="social-icon-only">
+            <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
         </a>
     </div>
 
     <div class="section-title">فروعنا</div>
+
     <a href="#" class="branch-card"><div class="card-content">📍 بغداد : العراق مول - الطابق الثاني</div></a>
     <a href="#" class="branch-card"><div class="card-content">📍 بغداد : المنصور مول - الطابق الارضي</div></a>
-    <a href="#" class="branch-card"><div class="card-content">📍 كربلاء : بانوراما مول - الطابق الارضي</div></a>
-    <a href="#" class="branch-card"><div class="card-content">📍 النجف : سيتي مول - الطابق الارضي</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 بغداد : دريم سيتي مول - الطابق الاول</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 بغداد : الجادرية مول - الطابق السفلي</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 بغداد : القاهرة مول - الطابق الثاني</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 بغداد : العامرية مول - الطابق الثاني</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 بغداد : شارع الربيعي - مقابل جدار سنتر</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 بغداد : شارع الرشيد - مجاور تمثال عبد الكريم</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 بغداد : شارع الرشيد - مقابل مدخل المتنبي</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 بغداد : شارع الرواد - عمارة توربان</div></a>
     <a href="#" class="branch-card"><div class="card-content">📍 البصرة : تايمز سكوير - الطابق الثاني</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 النجف : سيتي مول - الطابق الارضي</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 النجف : الفرات مول - الطابق الاول</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 الحلة : بي دي سي مول - الطابق الثاني</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 الحلة : حمورابي مول - الطابق الارضي</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 الفلوجة : فلوجة مول - الطابق الارضي</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 الرمادي : شارع المستودع - عمارة الكوخ</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 الرمادي : شارع المستودع - مجاور كاجو</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 كربلاء : مجمع كربلاء التجاري - c35</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 كربلاء : بانوراما مول - الطابق الارضي</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 كربلاء : شارع السناتر - مجاور توربان</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 كربلاء : الحارث مول - الطابق الارضي</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 كربلاء : الفردوس مول - الطابق الارضي</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 المثنى : مول البركة - الطابق الأول</div></a>
+
+    <div class="section-title wholesale-header" style="border-right-color: #ffffff; margin-top: 50px;">فروع مبيعات الجملة</div>
+
+    <a href="#" class="branch-card wholesale-card"><div class="card-content">📦 بغداد (الكرخ) - شارع مطار المثنى</div></a>
+    <a href="#" class="branch-card wholesale-card"><div class="card-content">📦 بغداد (الرصافة) - شارع الرشيد</div></a>
 </div>
 
 </body>
