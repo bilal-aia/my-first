@@ -1,35 +1,155 @@
-<html>
-  
-  <head>
-    <title> اول تجربه </title>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>LAZAROS - فروعنا</title>
     
-    <style> 
-      
-      h1  {
-      color: red;
-      }
-      h3 {
-        color: red;
-      }
-      body {
-        background-color: black;
-        text-align: center;
-      }
-      a {
-        color: yellow;
-        text-decoration: none;
-        border: 2px solid red;
-        padding: 8px 16px;
-        border-radius: 12px;
-        display: inline-block;
-        margin-top: 15px
-      }
+    <style>
+        body { 
+            background: radial-gradient(circle at center, #2a0a0a 0%, #0a0c10 70%, #000000 100%); 
+            color: white; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            direction: rtl; 
+            padding: 20px 10px; 
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        .container { 
+            width: 100%; 
+            max-width: 480px; 
+            text-align: center; 
+        }
+        
+        /* صورة اللوغو - الروابط الأصلية */
+        .brand-logo-img { 
+            width: 120px; 
+            height: 120px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            margin: 10px auto 20px; 
+            display: block;
+            border: none; 
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.7); 
+        }
+
+        h1 { font-size: 1.8rem; letter-spacing: 1px; font-weight: 900; margin: 10px 0; }
+        
+        .contact-box {
+            background: rgba(13, 16, 23, 0.8);
+            border: 1px solid #ff0000;
+            border-radius: 50px;
+            padding: 10px 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            text-decoration: none;
+            margin: 15px 0;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+        }
+
+        /* تعديل الأيقونات لتكون 3D بدون مربع خلفي */
+        .social-icons-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px; 
+            margin: 15px auto 25px;
+        }
+
+        .social-icon-only {
+            display: inline-flex;
+            transition: 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .social-icon-only img {
+            width: 45px; /* حجم الأيقونة */
+            height: 45px;
+            object-fit: contain;
+            /* تأثير الـ 3D: ظل عميق يبرز الأيقونة عن الخلفية */
+            filter: drop-shadow(0 5px 8px rgba(0,0,0,0.8)) drop-shadow(0 0 3px rgba(255,0,0,0.2));
+        }
+
+        .social-icon-only:active {
+            transform: scale(1.15);
+            filter: brightness(1.2) drop-shadow(0 8px 12px rgba(255, 0, 0, 0.4));
+        }
+        
+        .section-title { 
+            text-align: right; 
+            font-weight: bold; 
+            font-size: 1.2rem; 
+            margin: 30px 10px 15px; 
+            color: #fff; 
+            border-right: 5px solid #ff0000; 
+            padding-right: 12px; 
+        }
+
+        .branch-card { 
+            position: relative; 
+            display: block; 
+            margin: 0 10px 15px; 
+            text-decoration: none; 
+            border-radius: 12px; 
+            background: transparent; 
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); 
+            transition: 0.3s ease; 
+        }
+
+        .card-content { 
+            position: relative; 
+            background: #0d1017; 
+            border-radius: 12px; 
+            padding: 20px 15px; 
+            text-align: right; 
+            font-size: 16px; 
+            z-index: 1; 
+            color: #ffffff; 
+            border-right: 3px solid #ff0000;
+            line-height: 1.4;
+        }
+
+        .branch-card:active { 
+            transform: scale(0.97); 
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.7); 
+        }
     </style>
-  </head>
-  
-  <body>
-  <h1>bilal</h1>
-      <h3>مرحبا بكم في موقعي الاول</h3>
-    <a href="https://www.instagram.com/o91_n/">حسابي الانستا </a>
-  </body>
-  </html>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://i.postimg.cc/RVPbS2fk/photo-2026-03-24-13-40-47.jpg" alt="LAZAROS Logo" class="brand-logo-img">
+    
+    <h1>LAZAROS</h1>
+    <p>فروعنا في العراق</p>
+    
+    <a href="tel:07825558001" class="contact-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384055.png" width="20" alt="WhatsApp">
+        <span>تواصل معنا: 07825558001</span>
+    </a>
+
+    <div class="social-icons-container">
+        <a href="https://www.instagram.com/o91_n/" class="social-icon-only">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+        </a>
+        <a href="#" class="social-icon-only">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+        </a>
+        <a href="#" class="social-icon-only">
+            <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+        </a>
+    </div>
+
+    <div class="section-title">فروعنا في العراق</div>
+
+    <a href="#" class="branch-card"><div class="card-content">📍 بغداد : المنصور مول - الطابق الارضي</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 بغداد : العراق مول - الطابق الثاني</div></a>
+    <a href="#" class="branch-card"><div class="card-content">📍 بغداد : دريم سيتي مول - الطابق الاول</div></a>
+</div>
+
+</body>
+</html>
